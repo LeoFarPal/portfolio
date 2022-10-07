@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Italic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-BoldItalic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: 700;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.division-space {
+  border-bottom: 2px solid rgb(30, 51, 170);
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255) !important;
+}
+.navbar .nav-item :hover {
+  color: rgb(185, 97, 62) !important;
+}
+.navbar .nav-item :active {
+  color: rgb(185, 36, 59) !important;
+}
+
+.navbar-brand {
+  border-radius: 50px;
+}
+
+.work .work-title {
+  margin: 2rem 0rem 2rem 0rem;
+}
+.work ul {
+  list-style: none;
+}
+.work .java-img, .work .react-img, .work .php-img, .work .wordpress-img {
+  width: 8%;
+}
+.work .java-img-mobile, .work .react-img-mobile, .work .php-img-mobile, .work .wordpress-img-mobile {
+  width: 15%;
+}
+.work .work-bg-img {
+  width: 60%;
+}
+.work .work-image {
+  width: 38%;
+}
+.work .card {
+  border: none;
+}
+.work .btn-item :hover {
+  background-color: rgb(119, 170, 212);
+  transition: 20ms;
+}
+.work .btn-item :active {
+  background-color: rgb(163, 176, 245);
+}
+.work .btn-big {
+  border-color: rgb(30, 51, 170);
+  border-radius: 20px;
+  width: 400px;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+  .work .btn-big {
+    width: 300px;
+  }
+}
+.work .btn-mid {
+  border-color: rgb(30, 51, 170);
+  border-radius: 20px;
+  width: 300px;
+}
+.work .btn-mobile {
+  border-color: rgb(30, 51, 170);
+  border-radius: 20px;
+  width: 200px;
+}
+.work .work-card {
+  border-left: 2px solid rgb(30, 51, 170);
+}
+
+.life, .about {
+  background-color: rgb(119, 170, 212);
+}
+.life .life-title, .life .about-title, .about .life-title, .about .about-title {
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.soft-card {
+  margin: 3rem;
+  border: 2px solid rgb(146, 146, 146);
+  border-radius: 10px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .soft-card {
+    margin: 1rem;
+  }
+}
+
+.ethic {
+  background-color: rgb(255, 255, 255);
+}
+.ethic .ethic-title {
+  margin: 2rem 0rem 2rem 0rem;
+}
+.ethic .ethic-element {
+  border: 2px solid rgb(30, 51, 170);
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+.ethic .ethic-element-dsk {
+  max-width: 600px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-content .about-text {
+  background-color: rgb(255, 255, 255);
+  margin: 3rem;
+  border: 2px solid rgb(146, 146, 146);
+  border-radius: 10px;
+  padding: 0.5rem;
+  max-width: 600px;
+}
+.about-content .about-img {
+  width: 20%;
+}
+@media only screen and (max-width: 1199px) {
+  .about-content {
+    flex-direction: column-reverse;
+  }
+  .about-content .about-img {
+    width: 30%;
+  }
+}
+
+.go-up {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.go-up .arrow-up {
+  width: 15%;
+}/*# sourceMappingURL=style.css.map */

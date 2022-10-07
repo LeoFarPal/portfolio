@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Leonardo's portfolio - A simple presentation of your favorite full stack developer!">
+
+    <!--Bootstap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--link CSS-->
+    <link rel="stylesheet" href="assets/sass/style.css"/>
+
+    <title>Leonardo Farinacci - Full Stack Developer - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+  </head>
+  <body>     
+    <!--Navbar with logo ---------------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#presentation"><img src="assets/images/logo.png" class="w-75"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#work">My Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#soft">Soft Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ethic">Ethic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Home and Presentation block ---------------------------------------------------------------------------- -->
+    <header class="container-fluid presentation px-0" id="presentation">
+      <div class="row mx-0">
+        <div class="col px-0">
+          <div class="bg-image">
+            <img src="assets/images/home-banner.jpg" class="img-fluid d-none d-md-none d-lg-block" alt="">
+            <img src="assets/images/home-banner-mid.jpg" class="img-fluid d-none d-lg-none d-md-block" alt="">
+            <img src="assets/images/home-banner-mobile.jpg" class="img-fluid d-block d-lg-none d-md-none" alt="">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="division-space"></div>
+
+    <!--Work Skills block ---------------------------------------------------------------------------- -->
+    <div class="container-fluid work pt-4 px-0 mx-0" id="work">
+      <div class="row mx-0">
+        <div class="col-3"></div>
+        <div class="col-6 text-center work-title">
+          <p class="h2"><em>Works</em></p>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+      <!--Work Skills Collapse Button List-->
+      <article class="flex-row d-none d-xl-flex mb-5 px-0" id="collapsecard">
+        <div class="col-4 d-flex flex-xl-column justify-content-center align-items-center">
+          <ul class="collapse-btn-work">
+            <li class="btn-item py-4">
+              <button class="btn btn-big d-xxl-block d-xl-none shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn1" aria-expanded="false" aria-controls="collapsebtn1">Java Script <img src="assets/images/javascript.png" class="java-img"></button>
+              <button class="btn btn-mid d-xxl-none d-xl-block shadow " type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn1" aria-expanded="false" aria-controls="collapsebtn1">Java Script <img src="assets/images/javascript.png" class="java-img"></button>
+            </li>
+            <li class="btn-item py-4">
+              <button class="btn btn-big d-xxl-block d-xl-none shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn2" aria-expanded="false" aria-controls="collapsebtn2">React <img src="assets/images/react.png" class="react-img"></button>
+              <button class="btn btn-mid d-xxl-none d-xl-block shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn2" aria-expanded="false" aria-controls="collapsebtn2">React <img src="assets/images/react.png" class="react-img"></button>
+            </li>
+            <li class="btn-item py-4">
+              <button class="btn btn-big d-xxl-block d-xl-none shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn3" aria-expanded="false" aria-controls="collapsebtn3">PHP <img src="assets/images/php.png" class="php-img"></button>
+              <button class="btn btn-mid d-xxl-none d-xl-block shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn3" aria-expanded="false" aria-controls="collapsebtn3">PHP <img src="assets/images/php.png" class="php-img"></button>
+            </li>
+            <li class="btn-item py-4">
+              <button class="btn btn-big d-xxl-block d-xl-none shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn4" aria-expanded="false" aria-controls="collapsebtn4">WordPress <img src="assets/images/wordpress.png" class="wordpress-img"></button>
+              <button class="btn btn-mid d-xxl-none d-xl-block shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn4" aria-expanded="false" aria-controls="collapsebtn4">WordPress <img src="assets/images/wordpress.png" class="wordpress-img"></button>
+            </li>
+          </ul>
+        </div>
+        <!--Work Skills Card-->
+        <div class=" col-8 card text-center" id="collapsecard" data-bs-parent="#collapsecard">
+          <img src="assets/images/work-background.png" class="img-fluid mx-auto card-img work-bg-img" alt="">
+          <div class="work-card card-img-overlay">
+            <!--Work Skills Collapse Images-->
+            <div class="col-12 collapse" id="collapsebtn1" data-bs-parent="#collapsecard">
+              <div class="card card-body m-0">
+                <a href="" target="_blank"><img src="assets/images/work-in-progress.jpg" class="img-fluid mx-auto work-image" alt="We're Working On It Right Now!"></a>
+              </div>
+            </div>
+            <div class="col-12 collapse" id="collapsebtn2" data-bs-parent="#collapsecard">
+              <div class="card card-body m-0">
+                <a href="" target="_blank"><img src="assets/images/work-in-progress.jpg" class="img-fluid mx-auto work-image" alt="We're Working On It Right Now!"></a>
+              </div>
+            </div>
+            <div class="col-12 collapse" id="collapsebtn3" data-bs-parent="#collapsecard">
+              <div class="card card-body m-0">
+                <a href="" target="_blank"><img src="assets/images/work-in-progress.jpg" class="img-fluid mx-auto work-image" alt="We're Working On It Right Now!"></a>
+              </div>
+            </div>
+            <div class="col-12 collapse" id="collapsebtn4" data-bs-parent="#collapsecard">
+              <div class="card card-body m-0">
+                <a href="" target="_blank"><img src="assets/images/work-in-progress.jpg" class="img-fluid mx-auto work-image" alt="We're Working On It Right Now!"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!--Work Skills Collapse Button List Mobile-->
+      <article class="row d-block d-xl-none p-0" id="collapsecard">
+        <div class="nav text-center justify-content-center px-2">
+          <ul class="collapse-btn-work px-0">
+            <li class="nav-item btn-item p-4">
+              <button class="btn btn-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn1" aria-expanded="false" aria-controls="collapsebtn1">Java Script <img src="assets/images/javascript.png" class="java-img-mobile"></button>
+            </li>
+            <div class="col-12 collapse" id="collapsebtn1" data-bs-parent="#collapsecard">
+              <div class="card card-body m-0">
+                <a href="" target="_blank"><img src="assets/images/work-in-progress-mobile.jpg" class="img-fluid mx-auto work-image" alt="We're Working On It Right Now!"></a>
+              </div>
+            </div>
+            <li class="nav-item btn-item p-4">
+              <button class="btn btn-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn2" aria-expanded="false" aria-controls="collapsebtn2">React <img src="assets/images/react.png" class="react-img-mobile"></button>
+            </li>
+            <div class="col-12 collapse" id="collapsebtn2" data-bs-parent="#collapsecard">
+              <div class="card card-body m-0">
+                <a href="" target="_blank"><img src="assets/images/work-in-progress-mobile.jpg" class="img-fluid mx-auto work-image" alt="We're Working On It Right Now!"></a>
+              </div>
+            </div>
+            <li class="nav-item btn-item p-4">
+              <button class="btn btn-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn3" aria-expanded="false" aria-controls="collapsebtn3">PHP <img src="assets/images/php.png" class="php-img-mobile"></button>
+            </li>
+            <div class="col-12 collapse" id="collapsebtn3" data-bs-parent="#collapsecard">
+              <div class="card card-body m-0">
+                <a href="" target="_blank"><img src="assets/images/work-in-progress-mobile.jpg" class="img-fluid mx-auto work-image" alt="We're Working On It Right Now!"></a>
+              </div>
+            </div>
+            <li class="nav-item btn-item p-4">
+              <button class="btn btn-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn4" aria-expanded="false" aria-controls="collapsebtn4">WordPress <img src="assets/images/wordpress.png" class="wordpress-img-mobile"></button>
+            </li>
+            <div class="col-12 collapse" id="collapsebtn4" data-bs-parent="#collapsecard">
+              <div class="card card-body m-0">
+                <a href="" target="_blank"><img src="assets/images/work-in-progress-mobile.jpg" class="img-fluid mx-auto work-image" alt="We're Working On It Right Now!"></a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </article>
+            
+      <div class="division-space"></div>
+    </div>
+
+          <!--Soft Skills Block ---------------------------------------------------------------------------- -->
+          <div class="container-fluid life pt-4 mx-0 px-0" id="soft">
+            <div class="row mx-0">
+              <div class="col-3"></div>
+              <div class="col-6 text-center life-title">
+                <p class="h2"><em>Soft Skills</em></p>
+              </div>
+              <div class="col-3"></div>
+            </div>
+
+            <!--Soft Skills Cards Grid--> 
+            <article class="row row-cols-1 row-cols-xl-4 row-cols-sm-2 g-5 mx-0">
+              <div class="col">
+                <div class="card soft-card shadow-lg">
+                  <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center text-center">
+                      <img src="assets/images/comunication.png" class="img-fluid rounded-start w-75" alt="comunication-cockade">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Comunication</strong></h5>
+                        <p class="card-text">Short and clear exposure ability</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card soft-card shadow-lg">
+                  <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center text-center">
+                      <img src="assets/images/relationship.png" class="img-fluid rounded-start w-75" alt="relatioship-cockade">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Relationship</strong></h5>
+                        <p class="card-text">Teamwork and avoiding conflicts with colleagues and clients</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><div class="col">
+                <div class="card soft-card shadow-lg">
+                  <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center text-center">
+                      <img src="assets/images/organization.png" class="img-fluid rounded-start w-75" alt="organization-cockade">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Organization & Optimization</strong></h5>
+                        <p class="card-text">Better use of time and resources to reduce costs and achieve goals</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><div class="col">
+                <div class="card soft-card shadow-lg">
+                  <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center text-center">
+                      <img src="assets/images/research.png" class="img-fluid rounded-start w-75" alt="research-cockade">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Research</strong></h5>
+                        <p class="card-text">Knowing how to research and not get lost in the data</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><div class="col">
+                <div class="card soft-card shadow-lg">
+                  <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center text-center">
+                      <img src="assets/images/creative-mind.png" class="img-fluid rounded-start w-75" alt="creative-cockade">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Creative Mind</strong></h5>
+                        <p class="card-text">Inventing, imagining and having a learning mind</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><div class="col">
+                <div class="card soft-card shadow-lg">
+                  <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center text-center">
+                      <img src="assets/images/empathy.png" class="img-fluid rounded-start w-75" alt="empathy-cockade">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Empathy</strong></h5>
+                        <p class="card-text">Understand the state of mind of those around you and know how to express it</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><div class="col">
+                <div class="card soft-card shadow-lg">
+                  <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center text-center">
+                      <img src="assets/images/problem-solving.png" class="img-fluid rounded-start w-75" alt="problem-cockade">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Problem Solving</strong></h5>
+                        <p class="card-text">Circumvent or eliminate difficulties and problems, create new ways</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><div class="col">
+                <div class="card soft-card shadow-lg">
+                  <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center text-center">
+                      <img src="assets/images/reliability.png" class="img-fluid rounded-start w-75" alt="reliability-cockade">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Reliability</strong></h5>
+                        <p class="card-text">Meet deadlines, being trustworthy</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div class="division-space"></div>
+          </div>
+
+          <!--Ethic Block ---------------------------------------------------------------------------- -->
+          <div class="container-fluid ethic pt-4 px-0 mx-0" id="ethic">
+            <div class="row mx-0">
+              <div class="col-3"></div>
+              <div class="col-6 text-center ethic-title">
+                <p class="h2"><em>Ethic and Philosophy</em></p>
+              </div>
+              <div class="col-3"></div>
+            </div>
+
+            <!--Ethic desktop-->
+            <article class="row d-none d-xl-flex p-0 m-0">
+              <div class="row align-items-center">
+                <div class="col-6 text-center ethic-img">
+                  <img src="assets/images/ethic.png" class="img-fluid w-75" alt="ethic-and-philosophy-img">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4 text-center">
+                  <div class="ethic-element ethic-element-dsk shadow">
+                    <br>
+                    I believe that work is an important part of a person's life, something useful for himself and the world, something that gives more meaning to our lives. However, although it is important, it must not exceed certain limits, otherwise it would destroy our enthusiasm, our passion and the possibility to develop.</br></br>
+                    </p>
+                    <p>
+                      Mutual respect is the basis of every reality, including the workplace. If that were not the case, the rest of those fine words like collaboration or communication, which are the foundation of a healthy workplace, would naturally fall apart.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+              </div>
+            </article>
+
+            <!--Ethic mobile-->
+            <article class="row d-block d-xl-none p-0 mx-0">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 text-center ethic-img">
+                  <img src="assets/images/ethic.png" class="img-fluid" alt="ethic-and-philosophy-img">
+                </div>
+                <div class="col-2"></div>
+              </div>
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 text-center ethic-element shadow">
+                  <p>
+                    I believe that work is an important part of a person's life, something useful for himself and the world, something that gives more meaning to our lives. However, although it is important, it must not exceed certain limits, otherwise it would destroy our enthusiasm, our passion and the possibility to develop.
+                  </p>
+                  <p>
+                    Mutual respect is the basis of every reality, including the workplace. If that were not the case, the rest of those fine words like collaboration or communication, which are the foundation of a healthy workplace, would naturally fall apart.
+                  </p>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </article>
+
+            <div class="division-space"></div>
+          </div>
+
+          <!--About Me Block ---------------------------------------------------------------------------- -->
+          <footer class="container-fluid about pt-4 px-0 mx-0" id="about">
+            <div class="row mx-0">
+              <div class="col-3"></div>
+              <div class="col-6 text-center about-title">
+                <p class="h2"><em>About Me and Contacts</em></p>
+              </div>
+              <div class="col-3"></div>
+            </div>
+            <div class="row mx-0">
+              <div class="col about-content">
+                    <p class="about-text text-center shadow-lg">Hello people, I am Leonardo Farinacci, born and resident in the center of Italy.<br>
+                      With my natural curiosity and passion I hope to help everyone who needs it in the best possible way.<br>
+                      If you are not convinced yet, you should know that you are looking at someone who likes sports, reading about science and space travel, and exploring everything that revolves around fantasy and science fiction. ;)
+                    </p>
+                    <img src="assets/images/photo.png" class="about-img img-fluid" alt="a photo of mine">
+              </div>
+            </div>
+            <div class="container-fluid links text-center">
+              <address>
+                <a href="mailto:leonardo.farinacci@gmail.com"  target="_blank"><img src="assets/images/mail-icon.png" class="mail-img" alt="leonardo.farinacci@gmail.com"></a>
+                <a href="https://www.linkedin.com/in/leonardo-farinacci-443350240" target="_blank"><img src="assets/images/linkedin-icon.png" class="img-fluid linkedin-img" alt="Linkedin"></a>
+              </address>
+            </div>
+            <div class="row mx-0 px-0">
+              <div class=" col go-up">
+                <a href="#presentation"><img src="assets/images/arrow-up.png" class="img-fluid arrow-up"></a>
+              </div>
+            </div>
+          </footer>
+            <div class="division-space"></div>
+
+    <!--Popper & Bootstrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>

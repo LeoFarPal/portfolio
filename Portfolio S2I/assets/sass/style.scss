@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Italic.ttf') format('ttf');
+    font-style: italic;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-BoldItalic.ttf') format('ttf');
+    font-style: italic;
+    font-weight: 700;
+  }
+
+$homeblue: rgb(119, 170, 212);
+$homewhite: rgb(255, 255, 255);
+$activation: rgb(185, 36, 59);
+$hovered: rgb(185, 97, 62);
+$spacebar: rgb(30, 51, 170);
+$lightblue: rgb(163, 176, 245);
+$grayborder: rgb(146, 146, 146);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.division-space {
+  border-bottom: 2px solid $spacebar;
+}
+
+// navbar block --------------------------------------------
+
+.navbar {
+  background-color: $homewhite !important;
+  .nav-item {
+    :hover {color: $hovered !important;}
+    :active {color: $activation !important;}
+  }
+}
+.navbar-brand {
+  border-radius: 50px;
+}
+
+// Work Skills Block ------------------------------------------
+
+.work {
+  .work-title {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  ul {
+    list-style: none;
+  }
+  .java-img, .react-img, .php-img, .wordpress-img {
+    width: 8%;
+  }
+  .java-img-mobile, .react-img-mobile, .php-img-mobile, .wordpress-img-mobile {
+    width: 15%;
+  } 
+  .work-bg-img {
+    width: 60%;
+  }
+  .work-image {
+    width: 38%;
+  }
+  .card {
+    border: none;
+  }
+  .btn-item {
+    :hover {
+      background-color: $homeblue;
+      transition: 20ms;
+    }
+    :active {
+      background-color: $lightblue;
+    }
+    }
+  .btn-big {
+    border-color: $spacebar;
+    border-radius: 20px;
+    width: 400px;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1500px) {
+    .btn-big {
+      width: 300px;
+    }
+   }
+   .btn-mid {
+    border-color: $spacebar;
+    border-radius: 20px;
+    width: 300px;
+  }
+  .btn-mobile {
+    border-color: $spacebar;
+    border-radius: 20px;
+    width: 200px;
+  }
+  .work-card {
+    border-left: 2px solid $spacebar;
+  }
+}
+
+// Life Skills Block ------------------------------------------
+
+.life, .about {
+  background-color: $homeblue;
+  .life-title, .about-title {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+}
+
+.soft-card {
+  margin: 3rem;
+  border: 2px solid $grayborder;
+  border-radius: 10px;
+  @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    margin: 1rem;
+  }
+}
+
+// Ethics Block ------------------------------------------------
+
+.ethic {
+  background-color: $homewhite;
+  .ethic-title {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .ethic-element {
+    border: 2px solid $spacebar;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+  }
+  .ethic-element-dsk{
+    max-width: 600px;
+  }
+}
+
+// About Block ------------------------------------------------
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .about-text {
+    background-color: $homewhite;
+    margin: 3rem;
+    border: 2px solid $grayborder;
+    border-radius: 10px;
+    padding: 0.5rem;
+    max-width: 600px;
+    }
+    .about-img {
+      width: 20%;
+    }
+    @media only screen and (max-width: 1199px) {
+      flex-direction: column-reverse;
+      .about-img {
+        width: 30%;
+    }
+    }
+}
+.go-up{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .arrow-up {
+    width: 15%;
+  }
+}
